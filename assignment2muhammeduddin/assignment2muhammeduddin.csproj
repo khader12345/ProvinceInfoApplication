@@ -57,6 +57,19 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Images\alberta.png" />
+	  <None Remove="Resources\Images\british_columbia.png" />
+	  <None Remove="Resources\Images\manitoba.png" />
+	  <None Remove="Resources\Images\newfoundland_and_labrador.png" />
+	  <None Remove="Resources\Images\new_brunswick.png" />
+	  <None Remove="Resources\Images\nova_scotia.png" />
+	  <None Remove="Resources\Images\ontario.png" />
+	  <None Remove="Resources\Images\prince_edward_island.png" />
+	  <None Remove="Resources\Images\quebec.png" />
+	  <None Remove="Resources\Images\saskatchewan.png" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
