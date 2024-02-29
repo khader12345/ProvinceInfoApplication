@@ -3,9 +3,9 @@ namespace assignment2muhammeduddin;
 
 public partial class Ontario : ContentPage
 {
-	public Ontario(Provinces porvince)
+	public Ontario(Provinces province)
 	{
 		InitializeComponent();
-        BindingContext = porvince;
+        BindingContext = province;
     }
 }
