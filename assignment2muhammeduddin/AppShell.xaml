@@ -5,11 +5,58 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:assignment2muhammeduddin"
     Shell.FlyoutBehavior="Disabled"
-    Title="assignment2muhammeduddin">
+    Title="Assignment 2">
 
     <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+    ContentTemplate="{DataTemplate local:MainPage}"
+    Route="MainPage" />
+
+    <ShellContent
+    Title="ProvincesListPage"
+    ContentTemplate="{DataTemplate local:ProvincesListPage}"
+    Route="ProvincesListPage" />
+
+    <ShellContent
+     Title="Ontario"
+     ContentTemplate="{DataTemplate local:Ontario}"
+     Route="Ontario" />
+
+    <ShellContent
+    Title="Quebec"
+    ContentTemplate="{DataTemplate local:Quebec}"
+    Route="Quebec" />
+
+    <ShellContent
+     Title="Manitoba"
+     ContentTemplate="{DataTemplate local:Manitoba}"
+     Route="Manitoba" />
+
+    <ShellContent
+    Title="Prince Edward Islands"
+    ContentTemplate="{DataTemplate local:PrinceEdwardIslands}"
+    Route="PrinceEdwardIslands" />
+
+    <ShellContent
+    Title="Saskatchewan"
+    ContentTemplate="{DataTemplate local:Saskatchewan}"
+    Route="Saskatchewan" />
+
+    <ShellContent
+    Title="Alberta"
+    ContentTemplate="{DataTemplate local:Alberta}"
+    Route="Alberta" />
+
+    <ShellContent
+    Title="British Columbia"
+    ContentTemplate="{DataTemplate local:BritishColumbia}"
+    Route="BritishColumbia" />
+
+    <ShellContent
+     Title="Newfoundland and Labrador"
+     ContentTemplate="{DataTemplate local:NewfoundlandAndLabrador}"
+     Route="NewfoundlandAndLabrador" />
+
+
+
 
 </Shell>
