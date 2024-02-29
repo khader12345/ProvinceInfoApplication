@@ -4,17 +4,23 @@ namespace assignment2muhammeduddin;
 
 public partial class ProvinceListPage : ContentPage
 {
+
+    // A public property to hold a list of provinces
     public List<Provinces> Provinces { get; set; }
 
     public ProvinceListPage()
     {
-        InitializeComponent();
-        Provinces = GetProvinces(); // This method should return a list of Province objects with populated data
-        BindingContext = this;
+        InitializeComponent(); // Initializes the page components
+        Provinces = GetProvinces(); // Retrieves and assigns a list of Province objects
+        BindingContext = this; // Sets the current instance as the context for data binding
     }
 
+    // Method to create and return a list of Provinces with predefined data
     private List<Provinces> GetProvinces()
     {
+
+        // Returns a list of hardcoded Provinces objects
+
         return new List<Provinces>
         {
             new Provinces {Name = "Ontario", Capital = "Toronto", FlagImagePath = "ontario.png" },
@@ -32,11 +38,15 @@ public partial class ProvinceListPage : ContentPage
 
         };
     }
+
+    // Event handler for tapping on a province item
     private async void OnProvinceTapped(object sender, TappedEventArgs e)
     {
         if (e.Parameter is Provinces tappedProvince)
         {
             ContentPage detailPage = null;
+
+            // Switch statement to navigate to the appropriate page based on the province selected
 
             switch (tappedProvince.Name)
             {
@@ -67,11 +77,18 @@ public partial class ProvinceListPage : ContentPage
                 case "Newfoundland and Labrador":
                     detailPage = new NewfoundlandAndLabrador(tappedProvince);
                     break;
+
+                // Case block for each province name that initializes a new page
+
                 default:
-                    // Optionally handle any other province that doesn't have a specific detail page
+
+                    // Default case to handle unspecified provinces, navigates to the main page
+
                     detailPage = new MainPage();
                     break;
             }
+
+            // If a detail page has been created, navigate to that page
 
             if (detailPage != null)
             {
@@ -82,8 +99,11 @@ public partial class ProvinceListPage : ContentPage
         }
     }
 
+    // Event handler to display the list of provinces
     private void DisplayList(object sender, EventArgs e)
     {
+        // Navigation to push a new instance of ProvinceListPage onto the navigation stack
+
         Navigation.PushAsync(new ProvinceListPage());
     }
 }
