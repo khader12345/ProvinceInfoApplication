@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="assignment2muhammeduddin.ProvinceListPage"
+             >
+    <ScrollView>
+    <VerticalStackLayout BackgroundColor="White">
+        <Label Text="List of Provinces" TextColor="Black" HorizontalOptions="Center" FontSize="30"/>
+        <CollectionView ItemsSource="{Binding Provinces}" SelectionMode="None">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Grid Padding="10" ColumnDefinitions="*,*,Auto">
+                        <Grid.GestureRecognizers>
+                            <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="OnProvinceTapped"
+                                          CommandParameter="{Binding .}"/>
+                        </Grid.GestureRecognizers>
+                        <Label Text="{Binding Name}" Grid.Column="0" VerticalOptions="Center" FontAttributes="Bold"/>
+                        <Label Text="{Binding Capital}" Grid.Column="1" VerticalOptions="Center" FontAttributes="Bold"/>
+                        <Image Source="{Binding FlagImagePath}" Grid.Column="2" 
+                       WidthRequest="50" HeightRequest="30" 
+                       VerticalOptions="Center" HorizontalOptions="End"/>
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+        <Button Text="Display List" HorizontalOptions="Center" Clicked="DisplayList" TextColor="White" />
+    </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
