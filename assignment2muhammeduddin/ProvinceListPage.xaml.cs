@@ -20,14 +20,13 @@ public partial class ProvinceListPage : ContentPage
 		{
 			new Province { Name = "Ontario", Capital = "Toronto", FlagImagePath = "ontario.png" },
 			new Province { Name = "Quebec", Capital = "Quebec City", FlagImagePath = "quebec.png" },
-			new Province {Name = "Nova Scotia", Capital = "Halifax",
-			FlagImagePath = "nova_scotia.png"},
+			new Province {Name = "Nova Scotia", Capital = "Halifax", FlagImagePath = "nova_scotia.png"},
 			new Province {Name = "Manitoba", Capital = "Winnipeg", FlagImagePath = "manitoba.png"},
 			new Province {Name = "Prince Edward Islands", Capital = "Charlottetown", FlagImagePath = "prince_edward_island.png"},
 			new Province {Name  = "Saskatchewan", Capital = "Regina", FlagImagePath = "saskatchewan.png"},
 			new Province {Name  = "Alberta", Capital = "Edmonton", FlagImagePath = "alberta.png"},
 			new Province {Name  = "British Columbia", Capital = "Victoria", FlagImagePath = "british_columbia.png"},
-			new Province {Name = "Newfoundland and Labrador", Capital = "St. Johns", FlagImagePath = "newfoundland_and_labrador.png"}
+			new Province {Name = "Newfoundland and Labrador", Capital = "St.Johns", FlagImagePath = "newfoundland_and_labrador.png"}
 
 
 
