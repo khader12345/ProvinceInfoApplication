@@ -88,6 +88,9 @@
 	  <MauiXaml Update="Alberta.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Manitoba.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="NovaScotia.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

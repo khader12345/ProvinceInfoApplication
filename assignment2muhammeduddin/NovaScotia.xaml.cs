@@ -3,7 +3,7 @@ namespace assignment2muhammeduddin;
 
 public partial class NovaScotia : ContentPage
 {
-	public NovaScotia(Province porvince)
+	public NovaScotia(Provinces porvince)
 	{
 		InitializeComponent();
 		BindingContext = porvince;

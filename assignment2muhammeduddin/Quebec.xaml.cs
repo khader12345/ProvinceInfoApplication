@@ -3,7 +3,7 @@ namespace assignment2muhammeduddin;
 
 public partial class Quebec : ContentPage
 {
-	public Quebec(Province province)
+	public Quebec(Provinces province)
 	{
 		InitializeComponent();
 		BindingContext = province;
