@@ -23,7 +23,6 @@
 
         <!-- Data binding to dynamically display the province's name -->
 
-
         <Label
             Text="{Binding Name}"
             FontSize="24"
