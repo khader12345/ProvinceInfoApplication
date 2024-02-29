@@ -5,17 +5,23 @@
              Title="NovaScotia"
              Background="White">
 
+    <!-- This layout arranges its attributes vertically -->
+    
     <VerticalStackLayout
         Padding="20"
         Spacing="20"
         HorizontalOptions="Center"
         VerticalOptions="CenterAndExpand">
 
+        <!-- This label displays static text -->
+        
         <Label 
             Text="Selected Province"
             FontSize="15" 
             TextColor="black"
             HorizontalOptions="Center" />
+
+        <!-- Data binding to dynamically display the province's name -->
 
         <Label
             Text="{Binding Name}"
@@ -23,17 +29,24 @@
             TextColor="black"
             HorizontalOptions="Center" />
 
+        <!-- Data binding to dynamically display the province's capital -->
+        
         <Label
             Text="{Binding Capital}"
             FontSize="18"
             TextColor="black"
             HorizontalOptions="Center"/>
 
+        <!-- Data binding for the image source to display a flag -->
+        <!-- It also ensures the image maintains its aspect ratio -->
+
         <Image
             Source="{Binding FlagImagePath}"
             Aspect="AspectFit"
             HeightRequest="200"
             WidthRequest="300"/>
+
+        <!-- Attribution to the creator of the page -->
 
         <Label
             Text="by Muhammed Uddin #991756307"
