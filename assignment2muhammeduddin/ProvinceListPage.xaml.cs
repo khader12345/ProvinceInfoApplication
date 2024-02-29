@@ -4,7 +4,7 @@ namespace assignment2muhammeduddin;
 
 public partial class ProvinceListPage : ContentPage
 {
-	public List<Province> Provinces {  get; set; }
+	public List<Province> Provinces { get; set; }
 
 	public ProvinceListPage()
 	{
@@ -53,7 +53,7 @@ public partial class ProvinceListPage : ContentPage
                 case "Manitoba":
                     detailPage = new Manitoba(tappedProvince);
                     break;
-                case "Prince Edward Islands":
+                case "Prince Edward Island":
                     detailPage = new PrinceEdwardIslands(tappedProvince);
                     break;
                 case "Saskatchewan":

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="assignment2muhammeduddin.Quebec"
+             Title="Quebec"
+             Background="White">
+
+    <VerticalStackLayout
+        Padding="20"
+        Spacing="20"
+        HorizontalOptions="Center"
+        VerticalOptions="CenterAndExpand">
+
+        <Label 
+            Text="Selected Province"
+            FontSize="15" 
+            TextColor="White"
+            HorizontalOptions="Center" />
+
+        <Label
+            Text="{Binding Name}"
+            FontSize="24"
+            TextColor="White"
+            HorizontalOptions="Center" />
+
+        <Label
+            Text="{Binding Captial}"
+            FontSize="18"
+            TextColor="White"
+            HorizontalOptions="Center"/>
+
+        <Image
+            Source="{Binding FlagImagePath}"
+            Aspect="AspectFit"
+            HeightRequest="200"
+            WidthRequest="300"/>
+
+        <Label
+            Text="by Muhammed Uddin #991756307"
+            TextColor="White"
+            HorizontalOptions="Center"
+            VerticalOptions="End"/>
+
+    </VerticalStackLayout>
+</ContentPage>
+ 
