@@ -2,11 +2,11 @@ using assignment2muhammeduddin.ProvinceLogic;
 
 namespace assignment2muhammeduddin;
 
-public partial class ProvincesListPage : ContentPage
+public partial class ProvinceListPage : ContentPage
 {
     public List<Provinces> Provinces { get; set; }
 
-    public ProvincesListPage()
+    public ProvinceListPage()
     {
         InitializeComponent();
         Provinces = GetProvinces(); // This method should return a list of Province objects with populated data
@@ -41,7 +41,7 @@ public partial class ProvincesListPage : ContentPage
             switch (tappedProvince.Name)
             {
                 case "Ontario":
-                    //detailPage = new Ontario(tappedProvince);
+                    detailPage = new Ontario(tappedProvince);
                     break;
                 case "Quebec":
                     detailPage = new Quebec(tappedProvince);
@@ -53,19 +53,19 @@ public partial class ProvincesListPage : ContentPage
                     detailPage = new Manitoba(tappedProvince);
                     break;
                 case "Prince Edward Islands":
-                    //detailPage = new PrinceEdwardIslands(tappedProvince);
+                    detailPage = new PrinceEdwardIsland(tappedProvince);
                     break;
                 case "Saskatchewan":
-                    //detailPage = new Saskatchewan(tappedProvince);
+                    detailPage = new Saskatchewan(tappedProvince);
                     break;
                 case "Alberta":
                     detailPage = new Alberta(tappedProvince);
                     break;
                 case "British Columbia":
-                    //detailPage = new BritishColumbia(tappedProvince);
+                    detailPage = new BritishColumbia(tappedProvince);
                     break;
                 case "Newfoundland and Labrador":
-                    //detailPage = new NewfoundlandAndLabrador(tappedProvince);
+                    detailPage = new NewfoundlandAndLabrador(tappedProvince);
                     break;
                 default:
                     // Optionally handle any other province that doesn't have a specific detail page
@@ -84,6 +84,6 @@ public partial class ProvincesListPage : ContentPage
 
     private void DisplayList(object sender, EventArgs e)
     {
-        Navigation.PushAsync(new ProvincesListPage());
+        Navigation.PushAsync(new ProvinceListPage());
     }
 }

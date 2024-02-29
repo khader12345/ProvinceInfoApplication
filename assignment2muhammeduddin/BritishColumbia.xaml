@@ -14,19 +14,19 @@
         <Label 
             Text="Selected Province"
             FontSize="15" 
-            TextColor="White"
+            TextColor="Black"
             HorizontalOptions="Center" />
 
         <Label
             Text="{Binding Name}"
             FontSize="24"
-            TextColor="White"
+            TextColor="black"
             HorizontalOptions="Center" />
 
         <Label
-            Text="{Binding Captial}"
+            Text="{Binding Capital}"
             FontSize="18"
-            TextColor="White"
+            TextColor="black"
             HorizontalOptions="Center"/>
 
         <Image
@@ -37,7 +37,7 @@
 
         <Label
             Text="by Muhammed Uddin #991756307"
-            TextColor="White"
+            TextColor="black"
             HorizontalOptions="Center"
             VerticalOptions="End"/>
 

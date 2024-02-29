@@ -13,7 +13,7 @@
 
     <ShellContent
     Title="ProvincesListPage"
-    ContentTemplate="{DataTemplate local:ProvincesListPage}"
+    ContentTemplate="{DataTemplate local:ProvinceListPage}"
     Route="ProvincesListPage" />
 
     <ShellContent
@@ -33,7 +33,7 @@
 
     <ShellContent
     Title="Prince Edward Islands"
-    ContentTemplate="{DataTemplate local:PrinceEdwardIslands}"
+    ContentTemplate="{DataTemplate local:PrinceEdwardIsland}"
     Route="PrinceEdwardIslands" />
 
     <ShellContent

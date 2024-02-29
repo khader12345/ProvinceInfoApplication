@@ -5,7 +5,7 @@
              >
     <ScrollView>
     <VerticalStackLayout BackgroundColor="White">
-        <Label Text="List of Provinces" TextColor="Black" HorizontalOptions="Center" FontSize="30"/>
+        <Label Text="List of Provinces" TextColor="Black" HorizontalOptions="Center" FontSize="30" FontAttributes="Bold"/>
         <CollectionView ItemsSource="{Binding Provinces}" SelectionMode="None">
             <CollectionView.ItemTemplate>
                 <DataTemplate>
@@ -14,8 +14,8 @@
                             <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="OnProvinceTapped"
                                           CommandParameter="{Binding .}"/>
                         </Grid.GestureRecognizers>
-                        <Label Text="{Binding Name}" Grid.Column="0" VerticalOptions="Center" FontAttributes="Bold"/>
-                        <Label Text="{Binding Capital}" Grid.Column="1" VerticalOptions="Center" FontAttributes="Bold"/>
+                        <Label Text="{Binding Name}" Grid.Column="0" VerticalOptions="Center" FontAttributes="Bold" TextColor="Black"/>
+                        <Label Text="{Binding Capital}" Grid.Column="1" VerticalOptions="Center" FontAttributes="Bold" TextColor="Black"/>
                         <Image Source="{Binding FlagImagePath}" Grid.Column="2" 
                        WidthRequest="50" HeightRequest="30" 
                        VerticalOptions="Center" HorizontalOptions="End"/>
@@ -23,7 +23,7 @@
                 </DataTemplate>
             </CollectionView.ItemTemplate>
         </CollectionView>
-        <Button Text="Display List" HorizontalOptions="Center" Clicked="DisplayList" TextColor="White" />
+        <Button Text="Display List" HorizontalOptions="Center" Clicked="DisplayList" TextColor="Black" />
     </VerticalStackLayout>
     </ScrollView>
 </ContentPage>
