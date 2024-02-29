@@ -76,6 +76,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Update="Ontario.xaml.cs">
+	    <DependentUpon>Ontario.xaml</DependentUpon>
+	  </Compile>
 	  <Compile Update="NovaScotia.xaml.cs">
 	    <DependentUpon>NovaScotia.xaml</DependentUpon>
 	  </Compile>
@@ -89,6 +92,9 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Manitoba.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Ontario.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="NovaScotia.xaml">
